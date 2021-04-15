@@ -12,7 +12,21 @@
         <span>Unchecked count: <span id="unchecked-count">0</span></span>
       </div>
       <button class="button center" onClick="addTodo()">Agregar Tarea</button>
-      <ul id="todo-list" class="todo-list"></ul>
+      
+      <ul id="todo-list" class="todo-list"> 
+        <table id="tablaToDo">
+          <thead>
+            <tr>
+              <th style="width:650px">Tarea</th>
+              <th style="width:100px">Check</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoToDo"> 
+          </tbody>
+        </table>
+      </ul>
+      <button class="button center" onClick="countChecked()">Refresh checkbox</button>
+      
     </div>
     <script src="./script.js"></script>
   </body>
